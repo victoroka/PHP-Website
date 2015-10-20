@@ -1,15 +1,15 @@
 html{
     font-family: Arial, sans-serif;
-    background-image: url(fotos/background:header/fundo.jpg);
+    background-image: url(fotos/background_header/fundo.jpg);
 }
 header{
-    margin-left: -85px;
+    margin-left: -65px;
     width: 300px;
     padding: 10px 50px 30px 10px;
 }
 body{
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 115px;
+    margin-right: 115px;
 }
 article{
     background: lightyellow;
@@ -44,14 +44,14 @@ footer{
 
 .cssmenu {
   background: #f96e5b;
-  width: 110%;
+  width: 100%;
   list-style:none; 
     z-index: 99;
     margin-bottom: 30px;
 }
 .cssmenu ul {
   margin: 0;
-  padding: 0px 70px;
+  padding: 0px 20px;
   line-height: 1;
   display: block;
   position: relative;
@@ -153,19 +153,21 @@ footer{
 .textoPersonagem{
     width: 48%;
     float: right;
+    margin-bottom: 25px;
      padding: 0px 8px 0px 8px;
    
 }
 .textoAtor{
     width: 48%;
     float: left;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding: 0px 8px 0px 8px;
     
 }
 
 footer {
     position: relative;
+    width: 100%;
     margin-bottom: 10px;
     font-size: 10pt;
     background-color:lightcoral;

@@ -1,7 +1,8 @@
-<nav class="cssmenu">
+﻿<nav class="cssmenu">
     <ul id="lista_menu">
         <li> <a href="index.php"><span>Home</span></a></li>
-        <li> <a href=""><span>Personagens</span></a>
+
+        <li> <a href="SobreOSite.php"><span>Sobre o Site</span></a></li>        <li> <a href=""><span>Personagens</span></a>
            <ul><li><a href="Eduardo.php"><span>Eduardo</span></a> </li>
                <li><a href="Monica.php"><span>Mônica</span></a> </li>
            </ul>

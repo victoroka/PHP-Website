@@ -15,16 +15,23 @@
 ?>
     
 <section> 
- <article id="articlepaddinghome">
-     <h1>Eduardo e Mônica</h1>
-     <p>Eduardo e Monica é uma canção composta por Renato Russo em 1986, no álbum Dois, do grupo Legião Urbana.</p>
-    <p>A canção narra, de forma linear, em quase cinco minutos, a história de amor de duas pessoas muito diferentes entre si. Sua letra é composta de frases bem-humoradas que descrevem as personagens ao mesmo tempo em que mostram a evolução de sua relação.</p>
-    <p>A música também inspirou um filme curta-metragem da Vivo, operadora de telefonia móvel, em forma campanha publicitária.</p></article>
-    <article>
-        <figure>
-            <img width="600" height="300" src="fotos/EduardoeMonicaHome.jpg" alt="Eduardo e Mônica" id="fotocentroencontro" />
-        </figure>    
-    </article> 
+    <article class="textoAtor">
+        <p>O site fala sobre blablabla.....</p>
+    </article>
+    <article class="textoPersonagem">
+        <h2>Login</h2>
+        <form action="SobreOSite.php" method="post">
+            <br/>
+            <label for="email">Email: </label>
+            <input type="email" value="" name="email" placeholder="example@email.com" /><br/>
+            <br/>
+            <label for="password">Senha: </label>
+            <input type="password" value="" name="password" /><br/>
+            <br/>
+            <input type="submit" value="ENVIAR" />
+        </form>
+        <p>Não é castrado? <b><a href="cadastro.php">Clique aqui</a></b> e se cadastre agora!</p>
+    </article>
 </section>
 <?php include "php/footer.inc"; ?>
 </body>

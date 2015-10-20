@@ -1,0 +1,259 @@
+html{
+    font-family: Arial, sans-serif;
+    background-image: url(fotos/background:header/fundo.jpg);
+}
+header{
+    margin-left: -85px;
+    width: 300px;
+    padding: 10px 50px 30px 10px;
+}
+body{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+article{
+    background: lightyellow;
+    border-radius: 15px;
+    padding: 0px 8px 0px 8px;
+}
+article p{
+    font-size: 12pt;
+    background-color: lightyellow;
+    text-align: justify;
+    border-radius: 15px;
+}
+#imagedu{
+    clear: both;
+    position: relative;
+    margin-left: 88px;
+}
+#imagmonica{
+    
+    clear: both;
+    position: relative;
+    margin-left: 88px;
+}
+
+footer{
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+
+.cssmenu {
+  background: #f96e5b;
+  width: 110%;
+  list-style:none; 
+    z-index: 99;
+    margin-bottom: 30px;
+}
+.cssmenu ul {
+  margin: 0;
+  padding: 0px 70px;
+  line-height: 1;
+  display: block;
+  position: relative;
+}
+
+.cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s; /*win safari mozi gc */
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+.cssmenu ul li a.aqui{ /***********/
+  color: #333333;
+  background: lightsalmon;
+  /*border-bottom: 3px solid #333333;*/
+}
+.cssmenu ul li ul li a.aquiSub{
+    color: #333333;
+}
+.cssmenu ul li a:hover {
+  color: #333333;
+}
+.cssmenu ul li a:hover:before { /*distancia que a linha se move*/
+  width: 100%;
+}
+.cssmenu ul li a:before {       /*animacao linha*/
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+.cssmenu li ul{
+    display: none;
+    position: absolute;
+}
+.cssmenu li:hover ul, .cssmenu li over ul{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    background-color: salmon;
+}
+
+ 
+/* Fim do css menu */
+
+#vanGogh{
+    float: left;
+    clear: both;
+    margin-right: 30px;
+    
+}
+#mutantes{
+    float: left;
+    clear: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    
+}
+#rimbaud{
+    float: left;
+    clear: right;
+    margin-right: 30px;
+}
+.textoCitacoes{
+    padding: 15px 30px 100px 15px;
+    margin-bottom: 17px;
+}
+.textoCitacoes2{
+    padding: 15px 30px 40px 15px;
+    margin-bottom: 17px;
+}
+.textoCitacoes3{
+    padding: 15px 30px 120px 15px;
+    margin-bottom: 17px;
+}
+.textoPersonagem{
+    width: 48%;
+    float: right;
+     padding: 0px 8px 0px 8px;
+   
+}
+.textoAtor{
+    width: 48%;
+    float: left;
+    margin-bottom: 15px;
+    padding: 0px 8px 0px 8px;
+    
+}
+
+footer {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 10pt;
+    background-color:lightcoral;
+    margin-top: 10px;
+    clear: both;
+    padding: 2px 2px 2px 2px;
+    text-align: right;
+}
+#video {
+    margin-left: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+#fotocentro {
+margin: 20px 30px 20px 255px;
+}
+figcaption {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+#video {
+    margin: 20px 30px 20px 180px;
+}
+#articlepadding {
+padding: 1px 10px 1px 10px;
+    margin-top: 10px;
+}
+#articlepadding2 {
+padding: 1px 10px 1px 10px;
+    margin-top: 10px;
+}
+#articlepadding3 {
+padding: 1px 10px 1px 10px;
+    margin-top: 10px;
+}
+#articlepaddinghome {
+padding: 1px 10px 1px 10px;
+    margin-bottom: 14px;
+}
+#liencontro {
+    
+    display: inline-block;
+    margin-left: 657px;
+    background-color: lightgray;
+}
+#liencontro2 {
+    text-align: left;
+    display: inline-block;
+    background-color: lightgray;
+}
+#liencontro3 {
+    text-align: right;
+    display: inline-block;
+    margin-left: 420px;
+    background-color: lightgray;
+}
+#liencontro4 {
+    text-align: left;
+    display: inline-block;
+    background-color: lightgray;
+}
+#fotocentroencontro {
+margin: 20px 30px 20px 320px;
+}
+#articlepaddingencontro3 {
+padding: 1px 1px 1px 8px;
+}
+/*#articleVoltarPag {
+background-image: url(backgroundteste.png);
+}*/
+#paddingcitacoes {
+    padding: 0.5px 2px 1px 8px;
+    margin-bottom: 17px;
+}
+#voltarPagA {
+    text-decoration: none;
+}
+#voltarPagB {
+    text-decoration: none;
+}
+.italico{
+    font-style: italic;
+    font-size: 11pt;
+    font-weight: bold;
+}
+#fotocentroencontro{
+    margin: 20px 30px 20px 180px;
+}

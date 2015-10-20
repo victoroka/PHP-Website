@@ -1,0 +1,1 @@
+<footer>Todos direitos reservados. LgndaryDuo.</footer>

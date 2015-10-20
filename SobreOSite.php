@@ -5,7 +5,7 @@
     <meta name="author" content="LgndaryDuo"/>
     <link rel="stylesheet" type="text/css" href="EdumonStyle.css" />
     <script src="EdumonScript.js"></script>
-    <title>Eduardo e Mônica</title>
+    <title>Sobre o Site</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
 </head>
 

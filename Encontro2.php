@@ -27,8 +27,8 @@
             </article>
             <article>
                 <ul>
-                    <li id="liencontro2"><a href="Encontro1.html" id="voltarPagA">Link para a parte 1 do encontro.</a></li>
-                    <li id="liencontro3"><a href="Encontro3.html" id="voltarPagB">Link para a parte 3 do encontro.</a></li>
+                    <li id="liencontro2"><a href="Encontro1.php" id="voltarPagA">Link para a parte 1 do encontro.</a></li>
+                    <li id="liencontro3"><a href="Encontro3.php" id="voltarPagB">Link para a parte 3 do encontro.</a></li>
                 </ul>
             </article>
         </section>

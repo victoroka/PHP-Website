@@ -3,7 +3,7 @@ html{
     background-image: url(fotos/background_header/fundo.jpg);
 }
 header{
-    margin-left: -65px;
+    margin-left: -25px;
     width: 300px;
     padding: 10px 50px 30px 10px;
 }
@@ -13,6 +13,7 @@ body{
 }
 article{
     background: lightyellow;
+    margin-right: -50px;
     border-radius: 15px;
     padding: 0px 8px 0px 8px;
 }
@@ -160,6 +161,7 @@ footer{
 .textoAtor{
     width: 48%;
     float: left;
+    margin-right: 10px;
     margin-bottom: 25px;
     padding: 0px 8px 0px 8px;
     
@@ -184,7 +186,7 @@ h1 {
     text-align: center;
 }
 #fotocentro {
-margin: 20px 30px 20px 255px;
+margin: 20px 30px 20px 325px;
 }
 figcaption {
     padding-bottom: 5px;
@@ -192,7 +194,7 @@ figcaption {
     text-align: center;
 }
 #video {
-    margin: 20px 30px 20px 180px;
+    margin: 20px 30px 20px 300px;
 }
 #articlepadding {
 padding: 1px 10px 1px 10px;
@@ -233,7 +235,7 @@ padding: 1px 10px 1px 10px;
     background-color: lightgray;
 }
 #fotocentroencontro {
-margin: 20px 30px 20px 320px;
+margin: 20px 30px 20px 400px;
 }
 #articlepaddingencontro3 {
 padding: 1px 1px 1px 8px;

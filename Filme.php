@@ -15,7 +15,7 @@
         <article><h1>Filme</h1></article>
         
         <article>
-            <video width="560" height="315" id="video" controls>
+            <video width="560" height="315" id="video" controls >
             <source src="videos/Eduardo%20e%20Monica%20%20O%20filme%20(%20OFICIAL%20).mp4" type="video/mp4">
             </video>
         </article>

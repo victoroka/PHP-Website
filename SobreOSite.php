@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
 </head>
 
-<body onload="mensagemHoraData()">
+<body>
         <?php include "php/header.inc";
               include "php/menu.inc";
 ?>

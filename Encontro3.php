@@ -23,7 +23,7 @@
             </article>
             <article>
                 <ul>
-                    <li id="liencontro4"><a href="Encontro2.html" id="voltarPagA">Link para a parte 2 do encontro.</a></li>
+                    <li id="liencontro4"><a href="Encontro2.php" id="voltarPagA">Link para a parte 2 do encontro.</a></li>
                 </ul>
             </article>
         </section>

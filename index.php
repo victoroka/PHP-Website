@@ -30,7 +30,7 @@
             <br/>
             <input type="submit" value="ENVIAR" />
         </form>
-        <p>Não é castrado? <b><a href="cadastro.php">Clique aqui</a></b> e se cadastre agora!</p>
+        <p>Não é castrado? <b><a href="edCadastro/cadastro.php"ss>Clique aqui</a></b> e se cadastre agora!</p>
     </article>
 </section>
 <?php include "php/footer.inc"; ?>

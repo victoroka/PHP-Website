@@ -22,7 +22,7 @@
     </article>
     <article class="textoPersonagem">
         <h2>Login</h2>
-        <form action="SobreOSite.php" method="post">
+        <form action="/edumon/edCadastro/avoidSql.php" method="POST">
             <br/>
             <label for="email">Email: </label>
             <input type="email" value="" name="email" placeholder="example@email.com" /><br/>

@@ -1,11 +1,17 @@
 <?php
+ 
+    include "funcoesInjection.php";
+
 	$nome = $_POST['nome'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $cidade = $_POST['cidade'];
-    $estado = $_POST['estado'];
+    $city = $_POST['cidade'];
+    $state = $_POST['estado'];
     $erro = 0;
+
+    $cidade = escape_html($city);
+    $estado = escape_html($state);
 
     if(empty($cidade) || strlen($cidade) < 2){
         echo "Voce deve preencher a cidade corretamente.<br />";

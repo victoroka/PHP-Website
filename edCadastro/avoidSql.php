@@ -12,7 +12,8 @@
           while($row = mysqli_fetch_array($resultado) ){
              if($row["email"] == $email && $row["senha"] == $senha)
              {
-                echo "<h3>Bem vindo " .$row["nome"]. ".</h3>";
+                //echo "<h3>Bem vindo " .$row["nome"]. ".</h3>";
+                 header('Location: ../SobreOSite.php');
                 $find = true;
              }
           }

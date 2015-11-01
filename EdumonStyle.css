@@ -195,6 +195,11 @@ figcaption {
 #video {
     margin: 20px 30px 20px 300px;
 }
+
+#articleh1 {
+    font-size: 16pt;
+}
+
 #articlepadding {
 padding: 1px 10px 1px 10px;
     margin-top: 10px;

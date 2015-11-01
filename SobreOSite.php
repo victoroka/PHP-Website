@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="utf-8"/>
     <meta name="author" content="LgndaryDuo"/>
     <link rel="stylesheet" type="text/css" href="EdumonStyle.css" />
-    <script src="EdumonScript.js"></script>
     <title>Sobre o Site</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
 </head>

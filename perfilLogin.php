@@ -10,11 +10,16 @@
     <body>
         <?php include "php/header.inc";
               include "php/menu.inc";
+              include "edCadastro/read.php";
 ?>
         <section>
             <article><h1>Perfil do Usuário</h1></article>
             <article>
-                
+                <?php
+
+echo $msg;
+
+?>
             </article>
         </section>
     </body>

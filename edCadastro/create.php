@@ -8,11 +8,12 @@ $password = $_POST['password'];
 $cidade = $_POST['cidade'];
 $estado = $_POST['estado'];
 $foto = $_FILES['foto']; 
-
-//adicionar a variavel da foto e colocar foto no banco INSERT INTO do lado do estado e inserir a variavel no VALUES 
+$resultado = true;
+$tamanho_maximo = $_POST['MAX_SIZE_FILE'];
+$arquivo = $foto['name'];
 
 //executando a operacao SQL
-$resultado = mysqli_query($conexao, "INSERT INTO bd(nome,email,senha,cidade,estado,foto) VALUES ('".$nome."','".$email."','".$password."','".$cidade."','".$estado."','".$foto."')") or die("Não foi possivel executar SQL:". mysqli_error($conexao));
+$resultado = mysqli_query($conexao, "INSERT INTO bd(nome,email,senha,cidade,estado,foto) VALUES ('".$nome."','".$email."','".$password."','".$cidade."','".$estado."','".$arquivo."')") or die("Não foi possivel executar SQL:". mysqli_error($conexao));
 
 
 if($resultado === TRUE){
@@ -20,6 +21,13 @@ if($resultado === TRUE){
 }else {
     echo "<br/>Erro no cadastro!";
 }
+
+include "salvaImagem.php";
+$salvo = salva($tamanho_maximo, $nome, $foto);
+    if($salvo) {
+        echo "Imagem salva.";
+    }
+
 //fechamento da conexao
 mysqli_close($conexao);
 ?>

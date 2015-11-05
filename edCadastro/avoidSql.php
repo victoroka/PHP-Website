@@ -4,9 +4,6 @@
     $email = strip_tags($_POST['email']);
     $senha = md5(strip_tags($_POST['password']));
 
-    setcookie('email', $email, time()+(24*60*60) );//1 dia
-    setcookie('senha', $senha, time()+(24*60*60) );//1 dia
-
     $find = false;
 
       // executando a operação de SQL
@@ -16,7 +13,7 @@
              if($row["email"] == $email && $row["senha"] == $senha)
              {
                 //echo "<h3>Bem vindo " .$row["nome"]. ".</h3>";
-                 header('Location: ../SobreOSite.php');
+                 header('Location: ../perfilLogin.php');
                 $find = true;
              }
           }

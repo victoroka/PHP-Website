@@ -15,20 +15,21 @@
         <article id="articleh1"><h1> Cadastro </h1></article>
         <article id="articlepadding">
 		<form method="POST" action="valida.php">
+            <p style="color: red">* Campos obrigatórios</p>
             <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" size="20"> 
+                <input type="text" name="nome" id="nome" size="20"><span style="color: red"> *</span>
             <br/>
             <br/>
             <label for="email">Email: </label>
-                <input type="email" name="email" id="email" size="20"> 
+                <input type="email" name="email" id="email" size="20"><span style="color: red"> *</span>
             <br/>
             <br/>
             <label for="password">Senha: </label>
-                <input type="password" name="password" id="password" size="20">
+                <input type="password" name="password" id="password" size="20"><span style="color: red"> *</span>
             <br/>
             <br/>
             <label for="password">Repita a senha: </label>
-                <input type="password" name="password2" id="password" size="20">
+                <input type="password" name="password2" id="password" size="20"><span style="color: red"> *</span>
             <br/>
             <br/>
             <input type="submit" value="Cadastrar" name="cadastrar">

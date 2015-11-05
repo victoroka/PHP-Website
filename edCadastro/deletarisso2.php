@@ -1,5 +1,5 @@
 <?php
-
+/*
 function escape_html($str){
     
     $char = array("\"", ">", "<", "&");
@@ -9,5 +9,9 @@ function escape_html($str){
                     
  
     return $newString;  
-}
+}   
+
+NAO UTILIZAR
+
+*/ 
 ?>

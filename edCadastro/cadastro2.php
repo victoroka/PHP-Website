@@ -14,7 +14,7 @@
         <section>
             <article id="articleh1"><h1>Cadastro</h1></article>
             <article id="articlepadding">
-		<form method="POST" action="valida2.php">
+		<form method="POST" enctype="multipart/form-data" action="valida2.php">
             <input type="hidden" name="nome" value="<?php echo $nome; ?>"> 
             <input type="hidden" name="email" value="<?php echo $email; ?>"> 
             <input type="hidden" name="password" value="<?php echo $password; ?>"> 
@@ -24,7 +24,11 @@
             <br/>
             <p><label for="estado">Estado: </label>
                 <input type="text" name="estado" id="estado" size="20"></p>     
-            <br/>     
+            <br/>  
+            <p><label for="foto">Foto: </label>
+                <input type="hidden" name="MAX_SIZE_FILE" value="10000000">
+                <input type="file" name="foto" id="foto" size="20"></p> 
+            <br/>
          	<input type="submit" value="Cadastrar" name="cadastrar">
 		</form>
             </article>

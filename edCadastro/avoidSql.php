@@ -1,8 +1,11 @@
 <?php
     include "conecta.php";    
 
-    $email = $_POST['email'];
-    $senha = $_POST['password'];
+    $email = strip_tags($_POST['email']);
+    $senha = md5(strip_tags($_POST['password']));
+
+    setcookie('email', $email, time()+(24*60*60) );//1 dia
+    setcookie('senha', $senha, time()+(24*60*60) );//1 dia
 
     $find = false;
 

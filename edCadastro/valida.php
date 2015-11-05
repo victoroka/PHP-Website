@@ -1,17 +1,11 @@
 <?php
-//var
-   include "funcoesInjection.php";
 
-	$name = $_POST['nome'];
-    $mail = $_POST['email'];
-    $senha = $_POST['password'];
+	$nome = strip_tags($_POST['nome']);
+    $email = strip_tags($_POST['email']);
+    $password = md5(strip_tags($_POST['password']));
+    $password2 = md5(strip_tags($_POST['password2']));
     $erro = 0;
-            
-      
-    $nome = escape_html($name); 
-    $email = escape_html($mail);
-    $password = escape_html($senha);
-        
+
 
 //verificaçao dos campos
     if(empty($nome) || strstr($email, "=")  || strstr($nome, ' ') == FALSE){
@@ -29,9 +23,12 @@
         $erro = 1;
    }
 
+  if($password != $password2){
+      echo "Senhas não correspondem.";
+      $erro = 1;
+  }
+
     if ($erro == 0) {
       include "cadastro2.php";
-} else {
-        echo "erro";
     }
 ?>

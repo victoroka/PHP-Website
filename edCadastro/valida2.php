@@ -1,17 +1,13 @@
 <?php
- 
-    include "funcoesInjection.php";
 
 	$nome = $_POST['nome'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $city = $_POST['cidade'];
-    $state = $_POST['estado'];
+    $cidade = strip_tags($_POST['cidade']);
+    $estado = strip_tags($_POST['estado']);
+    //colocar variavel pra foto e pasta
     $erro = 0;
-
-    $cidade = escape_html($city);
-    $estado = escape_html($state);
 
     if(empty($cidade) || strlen($cidade) < 2){
         echo "Voce deve preencher a cidade corretamente.<br />";

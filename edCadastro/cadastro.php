@@ -27,7 +27,11 @@
                 <input type="password" name="password" id="password" size="20">
             <br/>
             <br/>
-			<input type="submit" value="Cadastrar" name="cadastrar">
+            <label for="password">Repita a senha: </label>
+                <input type="password" name="password2" id="password" size="20">
+            <br/>
+            <br/>
+            <input type="submit" value="Cadastrar" name="cadastrar">
 		</form>	
         </article>
         </section>

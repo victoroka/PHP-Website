@@ -25,7 +25,7 @@ if($resultado === TRUE){
 include "salvaImagem.php";
 $salvo = salva($tamanho_maximo, $nome, $foto);
     if($salvo) {
-        echo "Imagem salva.";
+        header('Location: ../perfilLogin.php');
     }
 
 //fechamento da conexao

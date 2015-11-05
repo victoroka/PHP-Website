@@ -14,9 +14,8 @@ $encontrou = false;
              if($row["email"] == $email && $row["senha"] == $senha){
                 $nome = $row['nome'];
                 $foto = $row['foto'];
-                $msg = <<<EOD echo "<h3>Bem vindo $nome</h3>";
-                echo "<img alt='imagem' src='img/usuarios/$nome/$foto'/>";
-EOD;
+                $msgbv = "<h3>Bem vindo .$nome.</h3>";
+                $msgimg = "<img alt='imagem' src='img/usuarios/.$nome./.$foto.'/>";
                 $encontrou = true;
              }
           }
@@ -29,7 +28,8 @@ EOD;
 
 
 
-
+//"<h3>Bem vindo $nome</h3>";
+                //echo "<img alt='imagem' src='img/usuarios/$nome/$foto'/>";
 
 
 ?>

@@ -17,7 +17,8 @@
             <article>
                 <?php
 
-echo $msg;
+echo $msgbv;
+echo $msgimg;
 
 ?>
             </article>

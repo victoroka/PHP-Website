@@ -1,11 +1,12 @@
 <?php
 
-include "avoidSql.php";
+//include "avoidSql.php";
 include "conecta.php";
 
 $encontrou = false;
 
-
+ $email = $_COOKIE['email'];
+ $senha = $_COOKIE['senha'];
 
       // executando a operação de SQL
       $resultado = mysqli_query($conexao, "SELECT * from bd WHERE email='$email' AND senha='$senha'") or die("Não foi possível executar a SQL: ".mysqli_error($conexao));
@@ -14,7 +15,7 @@ $encontrou = false;
              if($row["email"] == $email && $row["senha"] == $senha){
                 $nome = $row['nome'];
                 $foto = $row['foto'];
-                $msgbv = "<h3>Bem vindo .$nome.</h3>";
+                $msgbv = "<h3>Bem vindo $nome</h3>";
                 $msgimg = "<img alt='imagem' src='img/usuarios/.$nome./.$foto.'/>";
                 $encontrou = true;
              }

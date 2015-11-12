@@ -10,15 +10,29 @@
     <body>
         <?php include "php/header.inc";
               include "php/menu.inc";
-              include "edCadastro/read.php";
 ?>
         <section>
             <article><h1>Perfil do Usuário</h1></article>
             <article>
                 <?php
+if(isset($_COOKIE['email'])){
+      
+   echo "Olá " . $_COOKIE['email']."</br>";
+   echo "<p>Sua senha em sha1 é: " . $_COOKIE['senha']."</p>";
+}
+
+include "edCadastro/conecta.php";
+include "edCadastro/read.php";
+
+$email = $_COOKIE['email'];
+ $senha = $_COOKIE['senha'];
+
 
 echo $msgbv;
-echo $msgimg;
+echo "Nome da foto: $foto";
+/*echo $msgimg;
+erro aqui BECAUSE FUCKING MAC FOLDERS
+*/
 
 ?>
             </article>

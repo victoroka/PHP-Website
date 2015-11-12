@@ -2,8 +2,12 @@
     include "conecta.php";    
 
     $email = strip_tags($_POST['email']);
-    $senha = md5(strip_tags($_POST['password']));
+    $senha = sha1(strip_tags($_POST['password']));
+    
+   
 
+   echo $email;
+    echo $senha;
     $find = false;
 
       // executando a operação de SQL
@@ -12,7 +16,9 @@
           while($row = mysqli_fetch_array($resultado) ){
              if($row["email"] == $email && $row["senha"] == $senha)
              {
-                //echo "<h3>Bem vindo " .$row["nome"]. ".</h3>";
+    setcookie('email', $email, time()+(24*60*60*30), '/' );//1 dia
+    setcookie('senha', $senha, time()+(24*60*60*30), '/' );//1 dia
+             //echo "<h3>Bem vindo " .$row["nome"].$row["senha"]. ".</h3>";
                  header('Location: ../perfilLogin.php');
                 $find = true;
              }

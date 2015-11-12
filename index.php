@@ -22,13 +22,13 @@
     </article>
     <article class="textoPersonagem">
         <h2>Login</h2>
-        <form action="/edumon/edCadastro/avoidSql.php" method="POST">
+        <form action="edCadastro/avoidSql.php" method="POST">
             <br/>
             <label for="email">Email: </label>
-            <input type="email" value="" name="email" placeholder="example@email.com" /><br/>
+            <input type="email" name="email" placeholder="example@email.com" /><br/>
             <br/>
             <label for="password">Senha: </label>
-            <input type="password" value="" name="password" /><br/>
+            <input type="password" name="password" /><br/>
             <br/>
             <input type="submit" value="ENVIAR" />
         </form>

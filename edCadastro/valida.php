@@ -2,8 +2,8 @@
 
 	$nome = strip_tags($_POST['nome']);
     $email = strip_tags($_POST['email']);
-    $password = md5(strip_tags($_POST['password']));
-    $password2 = md5(strip_tags($_POST['password2']));
+    $password = sha1(strip_tags($_POST['password']));
+    $password2 = sha1(strip_tags($_POST['password2']));
     $erro = 0;
 
 

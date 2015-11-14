@@ -15,7 +15,7 @@ $encontrou = false;
              if($row["email"] == $email && $row["senha"] == $senha){
                 $nome = $row['nome'];
                 $foto = $row['foto'];
-                $msgbv = "<h3>Bem vindo $nome</h3>";
+                $msgbv = "<h3>Bem vindo, $nome.</h3>";
                 $msgimg = "<img alt='imagem' src='img/usuarios/.$nome./.$foto.'/>";
                 $encontrou = true;
              }
